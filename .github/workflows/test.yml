@@ -1,1 +1,8 @@
-
+name: Helloy-world
+on: push
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: make say-hello
